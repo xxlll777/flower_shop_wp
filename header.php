@@ -28,8 +28,8 @@ $js_url  = $root_url . "/js";
 
 			<div class="header__box">
 		<div class="header__left">
-			<h2 class="header__ttl">Flower Shop</h2>
-		</div>
+			<h2 class="header__ttl"><a href="<?php echo home_url() ?>">Flower Shop</a></h2>
+		</div>a	
 		<nav class="header__right">
 
 			<ul class="header__right--nav">

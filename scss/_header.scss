@@ -10,9 +10,10 @@
 		padding-left: 20px;
 	}
 	&__ttl{
-		font-size: 30px;
+		a{
+			font-size: 30px;
 		color:#fff;
-		
+		}
 	}
 	&__box{
 		display: flex;
