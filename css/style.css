@@ -1,0 +1,366 @@
+body {
+  margin: 0; }
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  color: #383838;
+  font-size: 16px;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+.container {
+  width: 900px;
+  padding: 0; }
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+      box-sizing: border-box; } }
+
+.flexbox {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .flexbox {
+      display: block; } }
+
+.top__ttl {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 110px;
+  padding-bottom: 10px;
+  margin-bottom: 30px; }
+
+.header {
+  background-color: #193833;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  opacity: 0.9; }
+  .header__left {
+    padding-top: 20px;
+    padding-left: 20px; }
+  .header__ttl {
+    font-size: 30px;
+    color: #fff; }
+  .header__box {
+    display: flex;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between; }
+  .header__right {
+    padding-top: 30px; }
+    @media (max-width: 767px) {
+      .header__right {
+        padding-top: 15px;
+        padding-right: 10px; } }
+  .header__right--nav {
+    display: flex; }
+    @media (max-width: 767px) {
+      .header__right--nav {
+        display: none; } }
+  @media (min-width: 768px) {
+    .header__humburger {
+      display: none; } }
+  .header__humburger a {
+    text-decoration: none;
+    display: block; }
+  .header__humburger a:hover {
+    opacity: 0,5;
+    cursor: pointer; }
+  .header__humburger--menu {
+    font-size: 16px;
+    color: #fff;
+    text-align: center; }
+  .header__humburger--menu::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    display: block;
+    color: #fff;
+    font-size: 30px; }
+  .header__humburger--close {
+    display: none; }
+    .header__humburger--close a {
+      text-decoration: none;
+      display: block; }
+    .header__humburger--close a:hover {
+      cursor: pointer; }
+    .header__humburger--close--menu {
+      font-size: 16px;
+      color: #fff;
+      text-align: center; }
+    .header__humburger--close--menu::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f00d";
+      display: block;
+      color: #fff;
+      font-size: 30px; }
+  .header__right--nav a {
+    display: block;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.main__img img {
+  width: 100%; }
+  @media (max-width: 767px) {
+    .main__img img {
+      height: 100%; } }
+
+.news {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  @media (max-width: 767px) {
+    .news {
+      width: 100%; } }
+  .news__article {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+    margin-bottom: 20px; }
+  .news__date {
+    font-size: 14px; }
+  .news__txt {
+    margin-left: 50px;
+    font-size: 14px; }
+    .news__txt a {
+      color: #383838;
+      text-decoration: none; }
+
+.event {
+  padding-bottom: 70px; }
+  @media (max-width: 767px) {
+    .event {
+      width: 100%; } }
+  .event__box img {
+    width: 250px;
+    height: 140px; }
+    @media (max-width: 767px) {
+      .event__box img {
+        text-align: center; } }
+  .event__box {
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .event__box {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        text-align: center; } }
+    .event__box--ttl {
+      margin-top: 20px;
+      font-size: 14px; }
+      @media (max-width: 767px) {
+        .event__box--ttl {
+          margin-top: 10px; } }
+    .event__box--ttl a {
+      display: block;
+      color: #383838; }
+  .event__box:last-of-type {
+    margin-right: 0;
+    margin-bottom: 0; }
+
+.blog {
+  padding-bottom: 70px; }
+  .blog__img img {
+    width: 200px;
+    height: 150px; }
+    @media (max-width: 767px) {
+      .blog__img img {
+        width: 100%; } }
+  .blog__box {
+    width: 210px;
+    margin-right: 10px;
+    margin-bottom: 20px; }
+    @media (max-width: 767px) {
+      .blog__box {
+        width: 50%; } }
+  .blog__box:last-of-type {
+    margin-right: 0; }
+  .blog__box a {
+    display: block;
+    color: #383838; }
+    @media (max-width: 767px) {
+      .blog__box a {
+        width: 100%; } }
+  .blog__box--date {
+    margin-top: 10px;
+    font-size: 14px; }
+  .blog__box--ttl {
+    margin-top: 10px;
+    font-size: 17px; }
+  .blog__box--txt {
+    margin-top: 10px;
+    font-size: 15px; }
+
+.contact {
+  padding-bottom: 70px; }
+  .contact__left img {
+    width: 350px;
+    border-radius: 10px; }
+    @media (max-width: 767px) {
+      .contact__left img {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto; } }
+  .contact__right {
+    width: 530px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 50px 70px;
+    background-color: #a58b82;
+    border-radius: 10px;
+    box-sizing: border-box; }
+    @media (max-width: 767px) {
+      .contact__right {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto; } }
+    .contact__right--ttl {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .contact__right--txt {
+      font-size: 16px;
+      margin-bottom: 10px; }
+
+.footer {
+  background-color: #193833;
+  color: #fff;
+  height: 70px; }
+  @media (max-width: 767px) {
+    .footer__nav {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto; } }
+  .footer__nav--ul {
+    display: flex;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto; }
+    @media (max-width: 767px) {
+      .footer__nav--ul {
+        text-align: center; } }
+  .footer__nav--li {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px; }
+    .footer__nav--li a {
+      display: block;
+      color: #fff; }
+
+.humburger--open {
+  display: none;
+  padding-top: 70px; }
+  .humburger--open--li a {
+    display: block;
+    color: #383838;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    text-align: center;
+    text-decoration: none; }
+  .humburger--open--li a:hover {
+    background-color: #4b756e;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

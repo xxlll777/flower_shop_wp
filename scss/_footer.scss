@@ -1,0 +1,33 @@
+
+.footer{
+	background-color: #193833;
+	color:#fff;
+	height:70px;
+	&__nav{
+		@include sp{
+		width:100%;
+		margin-right: auto;
+		margin-left: auto;
+		}
+	}
+	&__nav--ul{
+		display: flex;
+		width:350px;
+		margin-right: auto;
+		margin-left: auto;
+		@include sp{
+		text-align: center;
+		}
+	}
+	&__nav--li{
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-top: 30px;
+		a{
+			display: block;
+			color:#fff;
+
+		}
+	}
+}
+

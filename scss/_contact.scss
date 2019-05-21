@@ -1,0 +1,38 @@
+.contact{
+	padding-bottom: 70px;
+	&__left{
+		img{
+			width:350px;
+			border-radius: 10px;
+			@include sp{
+			width:100%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		}
+	}
+	&__right{
+		width:530px;
+		margin-left: 10px;
+		color:#fff;
+		padding: 50px 70px;
+		background-color:  #a58b82;
+		border-radius: 10px;
+		box-sizing: border-box;
+		@include sp{
+		width:100%;
+		margin-right: auto;
+		margin-left: auto;
+		}
+		&--ttl{
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		&--txt{
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+	}
+
+}

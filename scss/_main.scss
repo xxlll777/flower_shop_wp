@@ -1,0 +1,13 @@
+
+
+.main{
+	&__img{
+		img{
+			width:100%;
+			@include sp{
+		height:100%;
+		}
+		}
+
+	}
+}

@@ -1,0 +1,98 @@
+.header{
+	background-color: #193833;
+	width:100%;
+	height:70px;
+	display: flex;
+	position: fixed;
+	opacity:0.9;
+	&__left{
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	&__ttl{
+		font-size: 30px;
+		color:#fff;
+		
+	}
+	&__box{
+		display: flex;
+		width:900px;
+		margin-right: auto;
+		margin-left: auto;
+    	justify-content: space-between;
+	}
+	&__right{
+		padding-top: 30px;
+		@include sp{
+			padding-top: 15px;
+			padding-right: 10px;
+		}
+	}
+
+	&__right--nav{
+		display: flex;
+		@include sp{
+		display: none;
+		}
+	}
+	&__humburger{
+		
+		@include pc{
+		display: none;
+		}
+		a{
+			text-decoration: none;
+			display: block;
+		}
+		a:hover{
+			opacity:0,5;
+			cursor: pointer;
+		}
+		&--menu{
+			font-size: 16px;
+			color:#fff;
+			text-align: center;
+		}
+		&--menu::before{
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		content: "\f0c9";
+		display:block;
+		color:#fff;
+		font-size: 30px;
+		}
+	}
+	&__humburger--close{
+		display: none;
+		a{
+			text-decoration: none;
+			display: block;
+		}
+		a:hover{
+			cursor: pointer;
+		}
+		&--menu{
+			font-size: 16px;
+			color:#fff;
+			text-align: center;
+		}
+		&--menu::before{
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		content: "\f00d";
+		display:block;
+		color:#fff;
+		font-size: 30px;
+		}
+	}
+
+
+
+
+	&__right--nav a{
+		display: block;
+		color:#fff;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
