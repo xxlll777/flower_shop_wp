@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+<div class="container">
 <?php if(have_posts()): ?>　　　
 <?php while(have_posts()): ?>
 <?php the_post(); ?>
@@ -21,5 +23,5 @@
 <?php wp_reset_postdata(); ?>
 
 
-
+</div>
 <?php get_footer(); ?>

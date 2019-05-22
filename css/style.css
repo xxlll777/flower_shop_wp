@@ -90,7 +90,7 @@ input, select {
   vertical-align: middle; }
 
 body {
-  color: #383838;
+  color: gray;
   font-size: 16px;
   margin: 0; }
 
@@ -135,7 +135,7 @@ li {
   .header__left {
     padding-top: 20px;
     padding-left: 20px; }
-  .header__ttl {
+  .header__ttl--top {
     font-size: 30px;
     color: #fff; }
   .header__box {
@@ -288,9 +288,6 @@ li {
   .blog__box--ttl {
     margin-top: 10px;
     font-size: 17px; }
-  .blog__box--txt {
-    margin-top: 10px;
-    font-size: 15px; }
 
 .contact {
   padding-bottom: 70px; }
@@ -362,5 +359,21 @@ li {
   .humburger--open--li a:hover {
     background-color: #4b756e;
     color: #fff; }
+
+.k-concept {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .k-concept__ttl {
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: bold;
+    border-top: 2px dotted;
+    border-bottom: 2px dotted; }
+  .k-concept__txt {
+    padding: 20px 0;
+    border-bottom: 2px dotted; }
+
+.k-news {
+  padding: 200px 0 150px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+
+
+.k-concept{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__ttl{
+        font-size: 20px;
+        padding:20px 0;
+        font-weight: bold;
+        border-top: 2px dotted;
+        border-bottom: 2px dotted;
+    }
+    &__txt{
+        padding: 20px 0;
+        border-bottom: 2px dotted;
+    }
+}
+
+
