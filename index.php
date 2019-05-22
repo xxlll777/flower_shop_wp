@@ -44,7 +44,7 @@ $js_url  = $root_url . "/js";
     if ($posts) : foreach ($posts as $post) : setup_postdata($post); ?>
 
 		<div class="event__box">
-			<a href="<?php the_permalink(); ?>"><img src="<?php echo $img_url; ?>/white.jpg" alt=""></a>
+			<a href="<?php the_permalink(); ?>"><img src="<?php echo CFS()->get( 'event-image' );?>" alt=""></a>
 			<div class="event__box--ttl"><a href="<?php echo get_post_type_archive_link( 'event' ); ?>"><?php the_title(); ?></a></div>
 		</div>
 
@@ -73,7 +73,8 @@ $js_url  = $root_url . "/js";
 
 		<div class="blog__box">
 			<a href="<?php echo get_post_type_archive_link( 'blog' ); ?>">	
-		<div class="blog__img"><img src="<?php echo $img_url; ?>/flower_red.jpg" alt=""></div>
+		<div class="blog__img"><img src="<?php
+echo CFS()->get( 'blog-image' );?>" alt=""></div>
 		<div class="blog__box--date"><?php the_time('Y/m/j') ?></div>
 		<div class="blog__box--ttl"><?php the_title(); ?></div>
 			</a>

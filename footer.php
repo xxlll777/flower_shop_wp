@@ -12,7 +12,8 @@ $js_url  = $root_url . "/js";
 				<li class="footer__nav--li"><a href="<?php echo get_permalink( get_page_by_path('concept') ); ?>">Concept</a></li>
 				<li class="footer__nav--li"><a href="<?php echo get_category_link( get_category_by_slug('news')->cat_ID); ?>">News</a></li>
 				<li class="footer__nav--li"><a href="<?php echo get_category_link( get_category_by_slug('event')->cat_ID); ?>">Event</a></li>
-				<li class="footer__nav--li"><a href="<?php echo get_category_link( get_category_by_slug('blog')->cat_ID); ?>">Blog</a></li>
+				<?php $blog = get_post_type_archive_link( 'blog' ); ?>
+				<li class="footer__nav--li"><a href="<?php echo $blog; ?>">Blog</a></li>
 				<li class="footer__nav--li"><a href="<?php echo get_permalink( get_page_by_path('contact') ); ?>">Contact</a></li>
 			</ul>
 		</div>

@@ -8,10 +8,10 @@
 
 
 <div class="news__article">
-		<div class="news__date"><?php the_time('Y/m/j') ?></div>
-		<div class="news__txt"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
-		</div>
-       
+<div class="news__date"><?php the_time('Y/m/j') ?></div>
+<div class="news__txt"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
+</div>
+
 
 <?php endwhile; ?>　
 <?php endif; ?>
