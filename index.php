@@ -102,6 +102,7 @@ echo CFS()->get( 'blog-image' );?>" alt=""></div>
 			<div class="contact__right--ttl">Flower Shop</div>
 			<div class="contact__right--txt">住所：XXXXXXXXX</div>
 			<div class="contact__right--txt">電話番号：XXXXXX</div>
+			<div class="contact__right--btn"><a href="#">お問い合わせ</a></div>
 		</div>
 	</div>
 </div>

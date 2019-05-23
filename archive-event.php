@@ -2,6 +2,7 @@
 
 <div class="k-event">
 <div class="container">
+  <div class="flexbox">
 <?php $args = array(
       'numberposts' => 3,                //表示（取得）する記事の数
       'post_type' => 'event'    //投稿タイプの指定
@@ -11,15 +12,16 @@
 
 
 <div class="event__box">
-			<a href="<?php the_permalink(); ?>"><img src="<?php echo $img_url; ?>/white.jpg" alt=""></a>
-			<div class="event__box--ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-		</div>
+      <a href="<?php the_permalink(); ?>"><img src="<?php echo CFS()->get( 'event-image' );?>" alt=""></a>
+      <div class="event__box--ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+    </div>
        
 
-		<?php
+    <?php
       endforeach;
       endif;
       wp_reset_postdata(); ?>
+      </div>
 </div>
 </div>
 
