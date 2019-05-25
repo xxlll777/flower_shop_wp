@@ -14,6 +14,13 @@
 		font-size: 30px;
 		color:#fff;
 		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color:#fff;
+			opacity:0.7;
+		}
 	}
 	&__box{
 		display: flex;

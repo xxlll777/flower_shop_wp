@@ -138,6 +138,11 @@ li {
   .header__ttl--top {
     font-size: 30px;
     color: #fff; }
+  .header__ttl a {
+    text-decoration: none; }
+  .header__ttl a:hover {
+    color: #fff;
+    opacity: 0.7; }
   .header__box {
     display: flex;
     width: 900px;
