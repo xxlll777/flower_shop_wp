@@ -1,9 +1,10 @@
+
 <?php if(have_posts()): ?>　　　
 <?php while(have_posts()): ?>　
 <?php the_post(); ?>
 
 
-<p class="txt"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p> ←追加
+<p class="txt"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 
 <?php endwhile; ?>　
 <?php endif; ?>
