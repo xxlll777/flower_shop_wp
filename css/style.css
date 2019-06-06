@@ -302,6 +302,7 @@ li {
     @media (max-width: 767px) {
       .contact__left img {
         width: 100%;
+        height: auto;
         margin-right: auto;
         margin-left: auto; } }
   .contact__right {
