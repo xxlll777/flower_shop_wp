@@ -53,9 +53,8 @@ $js_url  = $root_url . "/js";
 
 
 			</div>
-	</div>
 
-	<nav class="humburger--open">
+			<nav class="humburger--open">
 		<ul class="humburger--open--ul">
 				<li class="humburger--open--li"><a href="#">Concept</a></li>
 				<li class="humburger--open--li"><a href="#">News</a></li>
@@ -64,5 +63,8 @@ $js_url  = $root_url . "/js";
 				<li class="humburger--open--li"><a href="#">Contact</a></li>
 			</ul>
 	</nav>
+	</div>
+
+	
 
 </header>
