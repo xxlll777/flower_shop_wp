@@ -20,7 +20,7 @@ $js_url  = $root_url . "/js";
 	</div>
 </footer>
 
-<script src="js/common.js"></script>
+<script src="<?php echo $js_url; ?>/common.js"></script>
 
 	<?php wp_footer(); ?>
 </body>
