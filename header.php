@@ -17,6 +17,7 @@ $js_url  = $root_url . "/js";
   crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 	<link rel="stylesheet" href="<?php echo $css_url; ?>/style.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
