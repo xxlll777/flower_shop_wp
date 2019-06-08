@@ -35,8 +35,8 @@ $js_url  = $root_url . "/js";
 			<ul class="header__right--nav">
 				<li class="nav--li"><a href="<?php echo get_permalink( get_page_by_path('concept') ); ?>">Concept</a></li>
 				<li class="nav--li"><a href="<?php echo get_category_link( get_category_by_slug('news')->cat_ID); ?>">News</a></li>
-				<li class="nav--li"><a href="<?php echo get_category_link( get_category_by_slug('event')->cat_ID); ?>">Event</a></li>
-				<li class="nav--li"><a href="<?php echo get_post_type_archive_link( 'blog' ); ?>">Blog</a></li>
+				<li class="nav--li"><a href="<?php echo home_url('event') ?>">Event</a></li>
+				<li class="nav--li"><a href="<?php echo home_url('blog') ?>">Blog</a></li>
 				<li class="nav--li"><a href="<?php echo get_permalink( get_page_by_path('contact') ); ?>">Contact</a></li>
 			</ul>
 
