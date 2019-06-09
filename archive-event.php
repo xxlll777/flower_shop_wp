@@ -3,6 +3,7 @@
 <div class="k-event">
 <div class="container">
   <div class="flexbox">
+    イベント
 <?php $args = array(
       'numberposts' => 3,                //表示（取得）する記事の数
       'post_type' => 'event'    //投稿タイプの指定
