@@ -369,7 +369,9 @@ li {
     padding-bottom: 20px;
     border-bottom: 1px solid;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    width: 100%;
+    background: #ffffff; }
   .humburger--open--li a:hover {
     background-color: #4b756e;
     color: #fff; }
