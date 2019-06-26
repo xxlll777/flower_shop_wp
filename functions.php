@@ -18,6 +18,17 @@ function create_post_type() {
     'revisions'
   ];
 
+// add post type news
+ register_post_type( 'news',
+ array(
+   'label' => 'NEWS',
+   'public' => true,
+   'has_archive' => true,
+   'menu_position' => 4,
+   'supports' => $exampleSupports
+ )
+);
+
 
  // add post type blog
  register_post_type( 'blog',
