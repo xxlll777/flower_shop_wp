@@ -1,11 +1,30 @@
+<?php get_header(); ?>
 
-<?php if(have_posts()): ?>　　　
-<?php while(have_posts()): ?>　
-<?php the_post(); ?>
+<div class="k-event">
+<div class="container">
+  <div class="flexbox">
+    イベント
+    <?php var_dump(hoge); ?>
+<?php $args = array(
+      'numberposts' => 3,                //表示（取得）する記事の数
+      'post_type' => 'event'    //投稿タイプの指定
+    );
+    $posts = get_posts($args);
+    if ($posts) : foreach ($posts as $post) : setup_postdata($post); ?>
 
 
-<p class="txt"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+<div class="event__box">
+      <a href="<?php the_permalink(); ?>"><img src="<?php echo CFS()->get( 'event-image' );?>" alt=""></a>
+      <div class="event__box--ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+    </div>
+       
 
-<?php endwhile; ?>　
-<?php endif; ?>
-<?php wp_reset_postdata(); ?>
+    <?php
+      endforeach;
+      endif;
+      wp_reset_postdata(); ?>
+      </div>
+</div>
+</div>
+
+<?php get_footer(); ?>
